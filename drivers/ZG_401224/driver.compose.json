@@ -1,0 +1,33 @@
+{
+  "id": "ZG_401224",
+  "name": {
+    "en": "ZG 401224"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "icon": "/drivers/ZG_401224/assets/icon.svg",
+  "images": {
+    "large": "/drivers/ZG_401224/assets/images/large.png",
+    "small": "/drivers/ZG_401224/assets/images/small.png"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "Matcall bv"
+    ],
+    "productId": [
+      "ZG9101CS",
+      "ZG 401224"
+    ],
+    "deviceId": 257,
+    "profileId": 260,
+    "learnmode": {
+      "image": "/drivers/ZG_401224/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press the reset button 5 times (within 1.5 seconds) on the device, it will reset the device and active the pair mode.\nThe connected light will stay solid on for 3 seconds to indicate successful pairing."
+      }
+    }
+  }
+}

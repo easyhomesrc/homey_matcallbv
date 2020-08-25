@@ -1,0 +1,74 @@
+{
+  "id": "com.matcallbv.matcall",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "brandColor": "#373A3D",
+  "name": {
+    "en": "MATCALL"
+  },
+  "description": {
+    "en": "Adds support for Matcall bv devices."
+  },
+  "category": [
+    "lights"
+  ],
+  "tags": {
+    "en": [
+      "matcall",
+      "matcall bv",
+      "matcallbv"
+    ]
+  },
+  "permissions": [
+    "homey:wireless:zigbee"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Wang Wendong",
+    "email": "sunricher_src@163.com"
+  },
+  "bugs": {
+    "url": "https://github.com/easyhomesrc/homey_matcallbv/issues"
+  },
+  "source": "https://github.com/easyhomesrc/homey_matcallbv.git",
+  "support": "https://github.com/easyhomesrc/homey_matcallbv.git",
+  "drivers": [
+    {
+      "id": "ZG_401224",
+      "name": {
+        "en": "ZG 401224"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "icon": "/drivers/ZG_401224/assets/icon.svg",
+      "images": {
+        "large": "/drivers/ZG_401224/assets/images/large.png",
+        "small": "/drivers/ZG_401224/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "Matcall bv"
+        ],
+        "productId": [
+          "ZG9101CS",
+          "ZG 401224"
+        ],
+        "deviceId": 257,
+        "profileId": 260,
+        "learnmode": {
+          "image": "/drivers/ZG_401224/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the reset button 5 times (within 1.5 seconds) on the device, it will reset the device and active the pair mode.\nThe connected light will stay solid on for 3 seconds to indicate successful pairing."
+          }
+        }
+      }
+    }
+  ]
+}
