@@ -1,33 +1,57 @@
 {
   "id": "ZG_401224",
   "name": {
-    "en": "ZG 401224"
+    "en": "ZG DIM Light"
   },
   "class": "light",
   "capabilities": [
     "onoff",
     "dim"
   ],
-  "icon": "/drivers/ZG_401224/assets/icon.svg",
-  "images": {
-    "large": "/drivers/ZG_401224/assets/images/large.png",
-    "small": "/drivers/ZG_401224/assets/images/small.png"
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
   },
   "zigbee": {
-    "manufacturerName": [
-      "Matcall bv"
-    ],
+    "manufacturerName": "Matcall bv",
     "productId": [
       "ZG9101CS",
       "ZG 401224"
     ],
-    "deviceId": 257,
-    "profileId": 260,
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          8,
+          2821,
+          4096
+        ],
+        "bindings": [
+          25
+        ]
+      }
+    },
     "learnmode": {
       "image": "/drivers/ZG_401224/assets/learnmode.svg",
       "instruction": {
-        "en": "Press the reset button 5 times (within 1.5 seconds) on the device, it will reset the device and active the pair mode.\nThe connected light will stay solid on for 3 seconds to indicate successful pairing."
+        "en": "Press the reset button 5 times (within 1.5 seconds) on the device, it will reset the device and active the pair mode."
       }
     }
-  }
+  },
+  "images": {
+    "large": "/drivers/ZG_401224/assets/images/large.png",
+    "small": "/drivers/ZG_401224/assets/images/small.png"
+  },
+  "settings": [
+  ]
 }
