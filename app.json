@@ -1,6 +1,6 @@
 {
   "id": "com.matcallbv.matcall",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#373A3D",
@@ -231,8 +231,7 @@
             ],
             "bindings": [
               6,
-              8,
-              25
+              8
             ]
           }
         },
